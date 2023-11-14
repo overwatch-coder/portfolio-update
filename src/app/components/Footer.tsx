@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="flex items-center justify-center">
       <div className="w-full mx-auto text-center">
         <hr className="border border-slate-900 my-3" />
-        <p className="text-sm">
+        <p className="text-xs md:text-sm">
           Copyright © {new Date().getFullYear()} Overwatch Coder | Privacy
           Policy | All Rights Reserved
         </p>

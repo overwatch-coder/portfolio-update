@@ -1,21 +1,34 @@
+"use client";
 import { navlinks } from "@/utils";
 import Profile from "./Profile";
 import NavLink from "./NavLink";
+import { useNavContext } from "../context/NavProvider";
+import { AiOutlineClose } from "react-icons/ai";
 
 const SideNav = () => {
+  const { isNavOpen, toggleSideBar, pathname } = useNavContext();
+
   return (
-    <header className="flex flex-col mx-auto space-y-5 text-white sticky top-0 left-0 py-5">
+    <nav
+      className={`transition md:w-72 min-h-screen bg-slate-900 flex flex-col mx-auto space-y-5 text-white fixed top-0 left-0 py-5 ${
+        isNavOpen ? "w-screen transition z-50" : "w-0 -z-50"
+      }`}
+    >
+      <span className="absolute top-5 right-5" onClick={toggleSideBar}>
+        <AiOutlineClose color={"white"} size={30} />
+      </span>
+
       <Profile />
-      <nav className="flex flex-col items-center">
+      <div
+        className={`flex flex-col items-center ${
+          isNavOpen ? "flex" : "hidden"
+        }`}
+      >
         {navlinks.map((item) => (
-          <NavLink
-            key={item.name}
-            name={item.name}
-            link={item.link}
-          />
+          <NavLink key={item.name} name={item.name} link={item.link} path={pathname} />
         ))}
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 

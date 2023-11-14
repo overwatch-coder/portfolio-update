@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import SideNav from "./components/SideNav";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import NavProvider from "./context/NavProvider";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
@@ -23,15 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} overflow-x-hidden scroll-smooth`}>
-        <section className="flex justify-center">
-          <div className="w-72 min-h-screen bg-slate-900">
+        <NavProvider>
+          <Header />
+          <section className="flex justify-center relative">
             <SideNav />
-          </div>
-          <main className="w-full flex-1 flex flex-col px-5 min-h-screen bg-slate-100">
-            <div className="mb-auto">{children}</div>
-            <Footer />
-          </main>
-        </section>
+            <main className="w-full flex-1 flex flex-col min-h-screen bg-slate-100">
+              <div className="mb-auto px-5">{children}</div>
+              <Footer />
+            </main>
+          </section>
+        </NavProvider>
       </body>
     </html>
   );

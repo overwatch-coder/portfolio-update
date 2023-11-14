@@ -4,16 +4,16 @@ import React from "react";
 const AboutPage = () => {
   return (
     <section className="pt-5 px-5 flex flex-col space-y-2">
-      <h1 className="text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-slate-900">
+      <h1 className="text-center md:text-start text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-slate-900">
         Overwatch Coder.
       </h1>
 
-      <p className="text-lg md:text-2xl font-light text-slate-600">
+      <p className="text-sm md:text-2xl font-light text-slate-600 text-center md:text-start">
         I love Exploring new things!
       </p>
 
-      <div className="flex flex-col space-y-5 text-justify pt-4">
-        <p className="text-slate-600 text-[17px]">
+      <div className="flex flex-col space-y-5 pt-4">
+        <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">👋</span> Hello! I am currently a
           first-year Masters student studying Electrical Engineering and
           Industrial Computing. My academic journey equipped me with a solid
@@ -21,7 +21,7 @@ const AboutPage = () => {
           like MATLAB, Proteus, AutoCAD, LabVIEW, and Arduino.
         </p>
 
-        <p className="text-slate-600 text-[17px]">
+        <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">💻</span>
           In the digital realm, I wear another hat as a web developer. I have
           had the pleasure of crafting and launching various web applications
@@ -30,7 +30,7 @@ const AboutPage = () => {
           (Node, Express, MongoDB, MySQL, JWT, NestJS) development.
         </p>
 
-        <p className="text-slate-600 text-[17px]">
+        <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">🚀</span> My journey is fueled by an
           insatiable passion for harnessing modern technology to address
           real-world challenges. If you are seeking a versatile web developer
