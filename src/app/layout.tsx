@@ -29,7 +29,7 @@ export default function RootLayout({
           <Header />
           <section className="flex justify-center relative">
             <SideNav />
-            <main className="w-full flex-1 flex flex-col min-h-screen bg-slate-100">
+            <main className="w-full flex-1 flex flex-col min-h-screen bg-slate-100 md:ms-[18rem]">
               <div className="mb-auto px-5">{children}</div>
               <Footer />
             </main>
