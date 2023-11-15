@@ -1,23 +1,17 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
-
 export const submitForm = async (prevState: any, formData: FormData) => {
-  const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } =
-    process.env;
-
-  const formValues = Object.fromEntries(formData);
-
   const dataToSubmit = {
-    service_id: REACT_APP_SERVICE_ID,
-    template_id: REACT_APP_TEMPLATE_ID,
-    user_id: REACT_APP_USER_ID,
+    service_id: process.env.EMAIL_JS_SERVICE_ID as string,
+    template_id: process.env.EMAIL_JS_TEMPLATE_ID as string,
+    user_id: process.env.EMAIL_JS_USER_ID as string,
+    accessToken: process.env.EMAIL_JS_ACCESS_TOKEN as string,
     template_params: {
-      fullName: formValues.fullname,
-      email: formValues.email,
-      subject: formValues.subject,
-      message: formValues.message,
-      from_name: formValues.fullname,
+      fullName: formData.get("fullname") as string,
+      email: formData.get("email") as string,
+      subject: formData.get("subject") as string,
+      message: formData.get("message") as string,
+      from_name: formData.get("fullname") as string,
     },
   };
 
@@ -30,16 +24,21 @@ export const submitForm = async (prevState: any, formData: FormData) => {
       },
     });
 
-    if (!res.ok) {
+    if (res.status !== 200) {
+      console.log({ erorr: await res.text(), res, message: "if clause" });
       throw Error("There was a problem sending the message");
     }
 
-    const data = await res.json();
-    console.log({ data });
-
-    return revalidatePath("/contact");
+    return {
+      message: "Thank you for leaving a message. I will response to you asap!",
+      success: true,
+      error: "",
+    };
   } catch (error: any) {
-    console.log({ error });
-    return { message: "There was a problem sending the message" };
+    return {
+      error: "There was a problem sending the message",
+      success: false,
+      message: "",
+    };
   }
 };
