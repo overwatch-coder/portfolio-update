@@ -30,7 +30,7 @@ export default function RootLayout({
           <section className="flex justify-center relative">
             <SideNav />
             <main className="w-full flex-1 flex flex-col min-h-screen bg-slate-100 md:ms-[18rem]">
-              <div className="mb-auto px-5">{children}</div>
+              <div className="mb-auto px-10">{children}</div>
               <Footer />
             </main>
           </section>

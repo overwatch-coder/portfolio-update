@@ -19,7 +19,7 @@ const SocialMedia = () => {
 
       <p className="pt-3 flex items-center gap-x-5">
         <Link
-          href={"https://www.instagram.com/overwatch_coder/"}
+          href={"https://www.instagram.com/brainy_201/"}
           target="_blank"
         >
           <BsInstagram className="text-xl md:text-2xl hover:text-cyan-700" />

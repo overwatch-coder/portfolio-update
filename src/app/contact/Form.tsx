@@ -16,7 +16,7 @@ const Form = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [closeMessage, setCloseMessage] = useState(false);
 
-  const refreshPage = () => {
+  const closeSuccessMessage = () => {
     state.success = false;
     setCloseMessage(true);
     setTimeout(() => {
@@ -38,7 +38,7 @@ const Form = () => {
           </p>
 
           <button
-            onClick={refreshPage}
+            onClick={closeSuccessMessage}
             className="px-4 py-2 rounded hover:scale-105 bg-slate-900 text-white uppercase"
           >
             Close

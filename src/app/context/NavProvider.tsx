@@ -10,6 +10,7 @@ import {
   useEffect,
   useRef,
 } from "react";
+import { Sugar } from "react-preloaders";
 
 type NavContextType = {
   isNavOpen: boolean;
@@ -41,14 +42,26 @@ const NavProvider = ({ children }: NavContextProps) => {
     isNavOpen,
     setIsNavOpen,
   };
-  return <NavContext.Provider value={values}>{children}</NavContext.Provider>;
+  return (
+    <NavContext.Provider value={values}>
+      <>
+        <Sugar
+          color={"#ffff"}
+          background={
+            "linear-gradient(90deg, rgba(9,7,43,1) 30%, rgba(2,16,49,1) 70%)"
+          }
+        />
+        {children}
+      </>
+    </NavContext.Provider>
+  );
 };
 
 export default NavProvider;
 
 export const useNavContext = () => {
   const { isNavOpen, setIsNavOpen } = useContext(NavContext);
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const toggleSideBar = () => {
     setIsNavOpen((prev) => !prev);
