@@ -30,7 +30,7 @@ export const submitForm = async (prevState: any, formData: FormData) => {
     }
 
     return {
-      message: "Thank you for leaving a message. I will response to you asap!",
+      message: "Thank you for leaving a message. I will respond to you asap!",
       success: true,
       error: "",
     };

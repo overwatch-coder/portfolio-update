@@ -54,12 +54,6 @@ const Form = () => {
         }`}
         ref={formRef}
       >
-        {!state?.success && state?.error && (
-          <p className="p-3 bg-red-300 text-red-600 text-center w-full rounded mt-4">
-            {state?.error}
-          </p>
-        )}
-
         <div className="flex flex-col items-start space-y-3">
           <label htmlFor="fullname">Full Name</label>
           <input
@@ -103,11 +97,19 @@ const Form = () => {
             className="py-2 px-3 w-full rounded border focus:border-2 focus:border-slate-900"
           ></textarea>
         </div>
+
+        {!state?.success && state?.error && (
+          <p className="p-3 bg-red-300 text-red-600 text-center w-full rounded mt-4">
+            {state?.error}
+          </p>
+        )}
+
         <button
           disabled={pending}
-          className="w-full px-4 py-2 bg-slate-900 rounded text-white hover:scale-[1.01] uppercase"
+          className="w-full px-4 py-2 bg-slate-900 rounded text-white hover:scale-[1.01] uppercase flex items-center justify-center space-x-5"
         >
           <span>{pending ? "Please wait" : "Send message"}</span>
+
           {pending && <ClipLoader color="#fff" size={20} loading={pending} />}
         </button>
       </form>
