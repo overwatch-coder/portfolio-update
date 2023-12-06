@@ -1,8 +1,35 @@
-import { ExperienceType, NavLinkType } from "../../types";
+import {
+  ExperienceType,
+  NavLinkType,
+  ProjectType,
+  SkillType,
+} from "../../types";
 import { BsPerson } from "react-icons/bs";
 import { MdWorkOutline, MdContactPhone } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import { GrProjects } from "react-icons/gr";
+import {
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiMongodb,
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiBootstrap,
+  SiGit,
+  SiExpress,
+  SiNodedotjs,
+  SiNestjs,
+} from "react-icons/si";
+
+import src from "@/assets/src.png";
+import metakay from "@/assets/metakay.png";
+import drwoy from "@/assets/drwoy.png";
+import etl from "@/assets/etl.png";
+import ptm from "@/assets/ptm.png";
+import qlikstudio from "@/assets/qlikstudio.png";
 
 export const navlinks: NavLinkType[] = [
   {
@@ -57,4 +84,82 @@ export const Experiences: ExperienceType[] = [
       "Collaborated with cross-functional teams, including UX designers, front-end developers to ensure seamless integration and delivery of final products.",
     ],
   },
+];
+
+export const Projects: ProjectType[] = [
+  {
+    subtitle: "A Full Stack Proposal Website",
+    name: "PTM App",
+    github: "https://github.com/overwatch-coder/propose2me",
+    site: "https://ptm-app.vercel.app/",
+    description:
+      "PTM is a platform designed to help individuals express their love and propose to their partners with confidence. It provides an effortless method for users to write their heartfelt requests and generate a unique link for their proposal. Users can then share the link with their potential partner, who can view the proposal and respond with an answer.",
+    skillset: ["Node JS", "Express JS", "Next.Js", "Tailwind CSS", "MongoDB"],
+    photo: ptm,
+  },
+  {
+    subtitle: "SRC Campaign Website",
+    name: "VaMiDzo",
+    github: "https://github.com/overwatch-coder/src-campaign-uhas",
+    site: "https://src-campaign-uhas.vercel.app/",
+    description:
+      "This Campaign website was designed for a Student Representative Council(SRC) president aspirant to post the agenda and goals he has for the Student body of the University.",
+    skillset: ["Next Js", "Tailwind CSS"],
+    photo: src,
+  },
+  {
+    subtitle: "A Transport and Logistics Website",
+    name: "ETL",
+    site: "https://www.etl.express/",
+    skillset: ["React Js", "Tailwind CSS"],
+    description:
+      "ETL is a transport and Logistics Website that specializes in auto transportation solutions, various uber services as well as auto repairs and maintenance. Clients can also book various appointments easily using the simple and easy appointment booking system found on the website.",
+    photo: etl,
+  },
+  {
+    subtitle: "A Fashion Design Website",
+    name: "Metakay",
+    github: "https://github.com/overwatch-coder/metakay",
+    site: "https://metakay.vercel.app/",
+    description:
+      "This is a fashion design website for a brand called Metakay. Integrated into the website include the brand's portfolio, shopping space, cart system and taking orders",
+    skillset: ["React Js", "Tailwind CSS", "Contentful CMS"],
+    photo: metakay,
+  },
+  {
+    subtitle: "An Artist Music Website",
+    name: "D Rwoy",
+    github: "https://github.com/overwatch-coder/drwoy",
+    site: "https://www.drwoy.com/",
+    description:
+      "A Music Portfolio for an artist which shows the recent songs. Also users can find merch, subscribe to newsletters as well as find social media details.",
+    skillset: ["Tailwind CSS", "React JS", "MailChimp Newsletter"],
+    photo: drwoy,
+  },
+  {
+    subtitle: "A Photography Portfolio Website",
+    name: "Qlik Studios",
+    github: "https://github.com/overwatch-coder/qlikstudios",
+    site: "https://qlikstudios.vercel.app/",
+    description:
+      "You can view the some of the client's recent works on photography a well as services available. Appointment Booking of Services can also be achieved easily.",
+    skillset: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    photo: qlikstudio,
+  },
+];
+
+export const Skills: SkillType[] = [
+  { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
+  { name: "HTML", icon: SiHtml5, color: "text-orange-600" },
+  { name: "CSS", icon: SiCss3, color: "text-blue-600" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-600" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+  { name: "React", icon: SiReact, color: "text-cyan-500" },
+  { name: "TypeScript", icon: SiTypescript, color: "text-blue-700" },
+  { name: "Node Js", icon: SiNodedotjs, color: "text-green-600" },
+  { name: "Bootstrap", icon: SiBootstrap, color: "text-purple-900" },
+  { name: "Git", icon: SiGit, color: "text-orange-600" },
+  { name: "Express Js", icon: SiExpress, color: "text-black" },
+  { name: "Next Js", icon: SiNextdotjs, color: "text-black" },
+  { name: "Nest Js", icon: SiNestjs, color: "text-red-600" },
 ];

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React from "react";
 
 const AboutPage = () => {
   return (
     <section className="pt-5 px-5 flex flex-col space-y-2">
-      <h1 className="text-center md:text-start text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-slate-900">
+      <h1 className="text-center md:text-start text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-blue-900">
         Overwatch Coder.
       </h1>
 
@@ -39,7 +38,7 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-between pt-4">
+      <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row items-center md:justify-between pt-4">
         <Link
           target="_blank"
           href="/nyamadi_atsu_cv.pdf"

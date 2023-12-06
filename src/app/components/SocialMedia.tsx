@@ -10,18 +10,19 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 
-const SocialMedia = () => {
+const SocialMedia = ({ classes }: { classes?: string }) => {
   return (
     <div className="pt-3 flex flex-col items-start gap-y-3">
-      <h2 className="tracking-wider text-sm uppercase text-slate-900 border-b-2 border-slate-900">
+      <h2
+        className={`tracking-wider text-sm uppercase ${
+          classes ? classes : "text-slate-900 border-slate-900"
+        } border-b-2`}
+      >
         Let's Link Up On Social Media
       </h2>
 
       <p className="pt-3 flex items-center gap-x-5">
-        <Link
-          href={"https://www.instagram.com/brainy_201/"}
-          target="_blank"
-        >
+        <Link href={"https://www.instagram.com/brainy_201/"} target="_blank">
           <BsInstagram className="text-xl md:text-2xl hover:text-cyan-700" />
         </Link>
 

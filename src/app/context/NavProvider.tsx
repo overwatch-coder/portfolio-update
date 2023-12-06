@@ -10,7 +10,7 @@ import {
   useEffect,
   useRef,
 } from "react";
-import { Sugar } from "react-preloaders";
+import { Sugar } from "react-preloaders2";
 
 type NavContextType = {
   isNavOpen: boolean;

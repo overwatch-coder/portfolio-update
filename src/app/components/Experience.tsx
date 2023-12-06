@@ -11,7 +11,7 @@ const Experience = ({
   return (
     <div className="flex flex-col space-y-3">
       <div className="flex flex-col md:flex-row space-y-1 md:space-y-0 md:items-center md:justify-between">
-        <h2 className="text-lg md:text-2xl font-bold capitalize text-gray-600">
+        <h2 className="text-lg md:text-2xl font-bold capitalize text-blue-900">
           {title}
         </h2>
         <p className="text-xs md:text-sm text-gray-400">{date}</p>

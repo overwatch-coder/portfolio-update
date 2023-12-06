@@ -1,1 +1,1 @@
-declare module "react-preloaders";
+declare module "react-preloaders2";
