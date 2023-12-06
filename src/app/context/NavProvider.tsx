@@ -45,12 +45,14 @@ const NavProvider = ({ children }: NavContextProps) => {
   return (
     <NavContext.Provider value={values}>
       <>
-        <Sugar
-          color={"#ffff"}
-          background={
-            "linear-gradient(90deg, rgba(9,7,43,1) 30%, rgba(2,16,49,1) 70%)"
-          }
-        />
+        {typeof window !== "undefined" && (
+          <Sugar
+            color={"#ffff"}
+            background={
+              "linear-gradient(90deg, rgba(9,7,43,1) 30%, rgba(2,16,49,1) 70%)"
+            }
+          />
+        )}
         {children}
       </>
     </NavContext.Provider>
