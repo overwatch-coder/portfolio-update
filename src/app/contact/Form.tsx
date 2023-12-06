@@ -3,6 +3,7 @@
 import { useFormState, useFormStatus } from "react-dom";
 import { submitForm } from "../actions/actions";
 import { useRef, useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 const initialState = {
   message: "",
@@ -106,7 +107,8 @@ const Form = () => {
           disabled={pending}
           className="w-full px-4 py-2 bg-slate-900 rounded text-white hover:scale-[1.01] uppercase"
         >
-          Send message
+          <span>{pending ? "Please wait" : "Send message"}</span>
+          {pending && <ClipLoader color="#fff" size={20} loading={pending} />}
         </button>
       </form>
     </>
