@@ -22,7 +22,7 @@ const SkillsPage = () => {
 
         <div className="flex flex-col py-5 space-y-2 flex-wrap border-b border-gray-400">
           <h3 className="uppercase font-semibold text-blue-900 md:text-xl">
-            Web Technologies, Libaries & Frameworks
+            Web Technologies, Libraries & Frameworks
           </h3>
           <p className="text-xs md:text-sm text-gray-400">
             HTML, CSS, Tailwind CSS, Boostsrap, React, Node.Js, NestJs, Next.Js,
