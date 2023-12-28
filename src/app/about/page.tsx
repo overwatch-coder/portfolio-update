@@ -14,8 +14,7 @@ const AboutPage = () => {
       <div className="flex flex-col space-y-5 pt-4">
         <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">👋</span> Hello! I am currently a
-          first-year Masters student studying Electrical Engineering and
-          Industrial Computing. My academic journey equipped me with a solid
+          first-year Masters student studying Embedded Electronics. My academic journey equipped me with a solid
           foundation in digital electronics and hands-on experience with tools
           like MATLAB, Proteus, AutoCAD, LabVIEW, and Arduino.
         </p>
