@@ -24,13 +24,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} overflow-x-hidden scroll-smooth`}>
+      <body
+        className={`${poppins.className} overflow-x-hidden scroll-smooth`}
+        suppressHydrationWarning={true}
+      >
         <NavProvider>
           <Header />
           <section className="flex justify-center relative">
             <SideNav />
             <main className="w-full flex-1 flex flex-col min-h-screen bg-slate-100 md:ms-[18rem]">
-              <div className="mb-auto px-10">{children}</div>
+              <div className="mb-auto px-3 md:px-10">{children}</div>
               <Footer />
             </main>
           </section>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const AboutPage = () => {
   return (
-    <section className="pt-5 px-5 flex flex-col space-y-2">
+    <section className="pt-5 md:px-5 flex flex-col space-y-2">
       <h1 className="text-center md:text-start text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-blue-900">
         Overwatch Coder.
       </h1>

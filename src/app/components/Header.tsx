@@ -7,7 +7,7 @@ import Link from "next/link";
 const Header = () => {
   const { toggleSideBar } = useNavContext();
   return (
-    <header className="w-screen z-50 sticky top-0 py-3 flex justify-between items-center bg-slate-900 md:hidden">
+    <header className="w-screen z-50 sticky top-0 left-0 py-3 flex justify-between items-center bg-slate-900 md:hidden">
       {/* Logo goes here */}
       <Link href="/" className="text-3xl font-bold text-white px-5">
         O.C

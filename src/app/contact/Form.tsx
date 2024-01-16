@@ -1,9 +1,9 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormState } from "react-dom";
 import { submitForm } from "../actions/actions";
 import { useRef, useState } from "react";
-import { ClipLoader } from "react-spinners";
+import Button from "./Button";
 
 const initialState = {
   message: "",
@@ -12,7 +12,6 @@ const initialState = {
 };
 
 const Form = () => {
-  const { pending } = useFormStatus();
   const [state, formAction] = useFormState(submitForm, initialState);
   const formRef = useRef<HTMLFormElement>(null);
   const [closeMessage, setCloseMessage] = useState(false);
@@ -104,14 +103,7 @@ const Form = () => {
           </p>
         )}
 
-        <button
-          disabled={pending}
-          className="w-full px-4 py-2 bg-slate-900 rounded text-white hover:scale-[1.01] uppercase flex items-center justify-center space-x-5"
-        >
-          <span>{pending ? "Please wait" : "Send message"}</span>
-
-          {pending && <ClipLoader color="#fff" size={20} loading={pending} />}
-        </button>
+        <Button />
       </form>
     </>
   );

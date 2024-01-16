@@ -28,4 +28,5 @@ export type SkillType = {
   icon: IconType;
   name: string;
   color: string;
+  url: string;
 }
