@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import { useNavContext } from "../context/NavProvider";
+import { useNavContext } from "@providers/NavProvider";
 import Link from "next/link";
 
 const Header = () => {

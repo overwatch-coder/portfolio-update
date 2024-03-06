@@ -41,7 +41,7 @@ const SocialMedia = ({ classes }: { classes?: string }) => {
           <BsLinkedin className="text-xl md:text-2xl hover:text-cyan-700" />
         </Link>
 
-        <Link target="_blank" href={"https://wa.me/+212698551516"}>
+        <Link target="_blank" href={"https://wa.me/+212777824970"}>
           <BsWhatsapp className="text-xl md:text-2xl hover:text-cyan-700" />
         </Link>
 

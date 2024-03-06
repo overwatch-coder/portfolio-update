@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProjectType } from "../../../types";
+import { ProjectType } from "@types";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import Image from "next/image";
@@ -14,7 +14,10 @@ const Project = ({
   photo,
 }: ProjectType) => {
   return (
-    <div className="flex flex-col space-y-2 border-b border-gray-400 py-4 last:border-b-0">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col space-y-2 border-b border-gray-400 py-4 last:border-b-0"
+    >
       <Link
         href={site ? site : "/projects"}
         target="_blank"

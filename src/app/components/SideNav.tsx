@@ -2,7 +2,7 @@
 import { navlinks } from "@/utils";
 import Profile from "./Profile";
 import NavLink from "./NavLink";
-import { useNavContext } from "../context/NavProvider";
+import { useNavContext } from "@providers/NavProvider";
 import { AiOutlineClose } from "react-icons/ai";
 import SocialMedia from "./SocialMedia";
 

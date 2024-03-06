@@ -11,15 +11,19 @@ const AboutPage = () => {
         I love Exploring new things!
       </p>
 
-      <div className="flex flex-col space-y-5 pt-4">
+      <div data-aos="fade-up" className="flex flex-col space-y-5 pt-4">
         <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">👋</span> Hello! I am currently a
-          first-year Masters student studying Embedded Electronics. My academic journey equipped me with a solid
-          foundation in digital electronics and hands-on experience with tools
-          like MATLAB, Proteus, AutoCAD, LabVIEW, and Arduino.
+          first-year Masters student studying Embedded Electronics. My academic
+          journey equipped me with a solid foundation in digital electronics and
+          hands-on experience with tools like MATLAB, Proteus, AutoCAD, LabVIEW,
+          and Arduino.
         </p>
 
-        <p className="text-slate-600 text-[17px] text-justify">
+        <p
+          data-aos="fade-up"
+          className="text-slate-600 text-[17px] text-justify"
+        >
           <span className="text-2xl">💻</span>
           In the digital realm, I wear another hat as a web developer. I have
           had the pleasure of crafting and launching various web applications
@@ -28,7 +32,10 @@ const AboutPage = () => {
           (Node, Express, MongoDB, MySQL, JWT, NestJS) development.
         </p>
 
-        <p className="text-slate-600 text-[17px] text-justify">
+        <p
+          data-aos="fade-up"
+          className="text-slate-600 text-[17px] text-justify"
+        >
           <span className="text-2xl">🚀</span> My journey is fueled by an
           insatiable passion for harnessing modern technology to address
           real-world challenges. If you are seeking a versatile web developer

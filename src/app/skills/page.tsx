@@ -26,7 +26,7 @@ const SkillsPage = () => {
           </h3>
           <p className="text-xs md:text-sm text-gray-400">
             HTML, CSS, Tailwind CSS, Boostsrap, React, Node.Js, NestJs, Next.Js,
-            TypeScript
+            TypeScript, React Native
           </p>
         </div>
 
@@ -35,7 +35,7 @@ const SkillsPage = () => {
             Other Technologies & Skills
           </h3>
           <p className="text-xs md:text-sm text-gray-400">
-            MySQL, Prisma, Git Version Control, SCRUM, MongoDB
+            MySQL, Prisma, Git Version Control, SCRUM, MongoDB, Zustand, Redux
           </p>
         </div>
       </div>

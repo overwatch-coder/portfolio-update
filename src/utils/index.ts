@@ -3,7 +3,7 @@ import {
   NavLinkType,
   ProjectType,
   SkillType,
-} from "../../types";
+} from "@types";
 import { BsPerson } from "react-icons/bs";
 import { MdWorkOutline, MdContactPhone } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
