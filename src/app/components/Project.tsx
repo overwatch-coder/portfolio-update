@@ -15,7 +15,7 @@ const Project = ({
 }: ProjectType) => {
   return (
     <div
-      data-aos="fade-up"
+      data-aos={name !== "Qlik Studios" && "fade-up"}
       className="flex flex-col space-y-2 border-b border-gray-400 py-4 last:border-b-0"
     >
       <Link
