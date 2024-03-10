@@ -19,6 +19,8 @@ const ProjectsPage = () => {
             site={project.site}
             photo={project.photo}
             key={idx}
+            lastItem={idx + 1}
+            length={Projects.length}
           />
         ))}
       </div>

@@ -22,6 +22,8 @@ export type ProjectType = {
   github?: string;
   site?: string;
   photo: StaticImageData;
+  lastItem?: number;
+  length?: number;
 };
 
 export type SkillType = {
