@@ -1,9 +1,4 @@
-import {
-  ExperienceType,
-  NavLinkType,
-  ProjectType,
-  SkillType,
-} from "@types";
+import { ExperienceType, NavLinkType, ProjectType, SkillType } from "@types";
 import { BsPerson } from "react-icons/bs";
 import { MdWorkOutline, MdContactPhone } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
@@ -88,6 +83,22 @@ export const Experiences: ExperienceType[] = [
 
 export const Projects: ProjectType[] = [
   {
+    subtitle: "A Photography Portfolio Website",
+    name: "Qlik Studios",
+    github: "https://github.com/overwatch-coder/qlikstudios-rebuild",
+    site: "https://qlikstudios.vercel.app/",
+    description:
+      "You can view the some of the client's recent works on photography a well as services available. Appointment Booking of Services can also be achieved easily.",
+    skillset: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zod",
+      "React Hook Form",
+    ],
+    photo: qlikstudio,
+  },
+  {
     subtitle: "A Full Stack Proposal Website",
     name: "PTM App",
     github: "https://github.com/overwatch-coder/propose2me",
@@ -117,16 +128,6 @@ export const Projects: ProjectType[] = [
     photo: etl,
   },
   {
-    subtitle: "A Fashion Design Website",
-    name: "Metakay",
-    github: "https://github.com/overwatch-coder/metakay",
-    site: "https://metakay.vercel.app/",
-    description:
-      "This is a fashion design website for a brand called Metakay. Integrated into the website include the brand's portfolio, shopping space, cart system and taking orders",
-    skillset: ["React Js", "Tailwind CSS", "Contentful CMS"],
-    photo: metakay,
-  },
-  {
     subtitle: "An Artist Music Website",
     name: "D Rwoy",
     github: "https://github.com/overwatch-coder/drwoy",
@@ -137,14 +138,14 @@ export const Projects: ProjectType[] = [
     photo: drwoy,
   },
   {
-    subtitle: "A Photography Portfolio Website",
-    name: "Qlik Studios",
-    github: "https://github.com/overwatch-coder/qlikstudios",
-    site: "https://qlikstudios.vercel.app/",
+    subtitle: "A Fashion Design Website",
+    name: "Metakay",
+    github: "https://github.com/overwatch-coder/metakay",
+    site: "https://metakay.vercel.app/",
     description:
-      "You can view the some of the client's recent works on photography a well as services available. Appointment Booking of Services can also be achieved easily.",
-    skillset: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    photo: qlikstudio,
+      "This is a fashion design website for a brand called Metakay. Integrated into the website include the brand's portfolio, shopping space, cart system and taking orders",
+    skillset: ["React Js", "Tailwind CSS", "Contentful CMS"],
+    photo: metakay,
   },
 ];
 
