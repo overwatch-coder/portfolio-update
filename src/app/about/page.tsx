@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const AboutPage = () => {
   return (
-    <section className="pt-5 md:px-5 flex flex-col space-y-2">
+    <section className="pt-5 md:px-5 flex flex-col space-y-3">
       <h1 className="text-center md:text-start text-3xl md:text-5xl lg:text-7xl tracking-wider font-semibold text-blue-900">
         Overwatch Coder.
       </h1>
 
-      <p className="text-sm md:text-2xl font-light text-slate-600 text-center md:text-start">
+      <p className="text-sm italic font-light text-slate-600 text-center md:text-start">
         I love Exploring new things!
       </p>
 
-      <div data-aos="fade-up" className="flex flex-col space-y-5 pt-4">
+      <div data-aos="fade-up" className="flex flex-col space-y-8 pt-4">
         <p className="text-slate-600 text-[17px] text-justify">
           <span className="text-2xl">👋</span> Hello! I am currently a
           first-year Masters student studying Embedded Electronics. My academic
@@ -44,7 +44,7 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row items-center md:justify-between pt-4">
+      <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row items-center md:justify-between pt-6">
         <Link
           target="_blank"
           href="/nyamadi_atsu_cv.pdf"

@@ -7,15 +7,15 @@ export const metadata = {
 
 const NotFound = () => {
   return (
-    <section className="flex flex-col items-center mt-10 space-y-5">
-      <h1 className="font-bold font-[georgia] text-6xl text-primary">404</h1>
+    <section className="flex flex-col items-center mt-20 space-y-5">
+      <h1 className="font-bold font-[georgia] text-6xl text-black">404</h1>
       <h2 className="text-2xl font-semibold">Page not found</h2>
       <p className="text-gray-600">
         We are sorry, the page you requested could not be found.
       </p>
       <Link
         href={"/"}
-        className="px-5 py-3 text-white uppercase bg-primary hover:bg-transparent border hover:border-primary hover:text-primary"
+        className="px-5 py-3 text-white uppercase bg-gray-800 hover:bg-transparent border hover:border-gray-800 hover:text-black"
       >
         Go Home
       </Link>
