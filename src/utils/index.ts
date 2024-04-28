@@ -25,6 +25,7 @@ import drwoy from "@/assets/drwoy.png";
 import etl from "@/assets/etl.png";
 import ptm from "@/assets/ptm.png";
 import qlikstudio from "@/assets/qlikstudio.png";
+import sheshare from "@/assets/sheshare.png";
 
 export const navlinks: NavLinkType[] = [
   {
@@ -95,6 +96,7 @@ export const Projects: ProjectType[] = [
       "TypeScript",
       "Zod",
       "React Hook Form",
+      "Email JS",
     ],
     photo: qlikstudio,
   },
@@ -105,8 +107,32 @@ export const Projects: ProjectType[] = [
     site: "https://ptm-app.vercel.app/",
     description:
       "PTM is a platform designed to help individuals express their love and propose to their partners with confidence. It provides an effortless method for users to write their heartfelt requests and generate a unique link for their proposal. Users can then share the link with their potential partner, who can view the proposal and respond with an answer.",
-    skillset: ["Node JS", "Express JS", "Next.Js", "Tailwind CSS", "MongoDB"],
+    skillset: [
+      "Node JS",
+      "Express JS",
+      "Next.Js",
+      "Tailwind CSS",
+      "MongoDB",
+      "TypeScript",
+    ],
     photo: ptm,
+  },
+  {
+    subtitle: "AirBnB-Like Full Stack Web App",
+    name: "SheShare Rental Services",
+    github: "https://github.com/overwatch-coder/SheShare",
+    site: "https://sheshare-frontend.onrender.com/",
+    description:
+      "SheShare Rental Services website is a full stack web application that aims to connect women who want to rent their properties with women who are looking for accommodations.",
+    skillset: [
+      "Node JS",
+      "Express JS",
+      "Next.Js",
+      "Tailwind CSS",
+      "MongoDB",
+      "TypeScript",
+    ],
+    photo: sheshare,
   },
   {
     subtitle: "SRC Campaign Website",
