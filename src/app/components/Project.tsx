@@ -37,6 +37,7 @@ const Project = ({
           width={500}
           height={500}
           loading="lazy"
+          quality={100}
           className="w-full md:w-[350px] hover:scale-105 transition object-contain"
         />
       </Link>

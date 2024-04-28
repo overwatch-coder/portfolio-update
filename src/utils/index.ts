@@ -157,7 +157,7 @@ export const Projects: ProjectType[] = [
     subtitle: "An Artist Music Website",
     name: "D Rwoy",
     github: "https://github.com/overwatch-coder/drwoy",
-    site: "https://www.drwoy.com/",
+    site: "https://officialdrwoy.vercel.app/",
     description:
       "A Music Portfolio for an artist which shows the recent songs. Also users can find merch, subscribe to newsletters as well as find social media details.",
     skillset: ["Tailwind CSS", "React JS", "MailChimp Newsletter"],
