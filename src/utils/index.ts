@@ -118,12 +118,12 @@ export const Projects: ProjectType[] = [
     photo: ptm,
   },
   {
-    subtitle: "AirBnB-Like Full Stack Web App",
-    name: "SheShare Rental Services",
-    github: "https://github.com/overwatch-coder/SheShare",
-    site: "https://sheshare-frontend.onrender.com/",
+    subtitle: "AirBNB Rental Full Stack Web App",
+    name: "SpaceShare Vacation Rentals",
+    github: "https://github.com/overwatch-coder/SpaceShare",
+    site: "https://spaceshare.onrender.com/",
     description:
-      "SheShare Rental Services website is a full stack web application that aims to connect women who want to rent their properties with women who are looking for accommodations.",
+      "Creating an Airbnb website, named SpaceShare. The website aims to connect people who want to rent their properties with people who are looking for accommodations.",
     skillset: [
       "Node JS",
       "Express JS",
