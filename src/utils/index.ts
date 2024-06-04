@@ -118,7 +118,7 @@ export const Projects: ProjectType[] = [
     photo: ptm,
   },
   {
-    subtitle: "AirBNB Rental Full Stack Web App",
+    subtitle: "AirBnB Rental Full Stack Web App",
     name: "SpaceShare Vacation Rentals",
     github: "https://github.com/overwatch-coder/SpaceShare",
     site: "https://spaceshare.onrender.com/",
