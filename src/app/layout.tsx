@@ -16,6 +16,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Overwatch Coder | Porfolio",
   description: "Overwatch Coder Porfolio website",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

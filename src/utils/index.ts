@@ -57,6 +57,18 @@ export const navlinks: NavLinkType[] = [
 
 export const Experiences: ExperienceType[] = [
   {
+    title: "Full Stack Developer - Intern",
+    date: "05/2024 - Present",
+    company: "White Hat Digital (WHD) Agency",
+    place: "Casablanca, Morocco",
+    description: [
+      "Created responsive mobile-first and interactive dashboard menu component enhancing user experience and smooth navigation.",
+      "Managed the creation and maintenance of landing and documentation pages, ensuring consistency and user-friendly experience.",
+      "Efficiently managed API endpoints with Axios and Fetch API, enabling seamless data integration and interaction with the backend.",
+      "Created a real-time restaurant digital menu theme customization system, allowing managers to easily customize the menu and enhance user experience.",
+    ],
+  },
+  {
     title: "React Software Developer - Intern",
     date: "06/2023 - 10/2023",
     company: "Software LAB",
@@ -135,14 +147,14 @@ export const Projects: ProjectType[] = [
     photo: sheshare,
   },
   {
-    subtitle: "SRC Campaign Website",
-    name: "VaMiDzo",
-    github: "https://github.com/overwatch-coder/src-campaign-uhas",
-    site: "https://src-campaign-uhas.vercel.app/",
+    subtitle: "An Artist Music Website",
+    name: "D Rwoy",
+    github: "https://github.com/overwatch-coder/drwoy",
+    site: "https://officialdrwoy.vercel.app/",
     description:
-      "This Campaign website was designed for a Student Representative Council(SRC) president aspirant to post the agenda and goals he has for the Student body of the University.",
-    skillset: ["Next Js", "Tailwind CSS"],
-    photo: src,
+      "A Music Portfolio for an artist which shows the recent songs. Also users can find merch, subscribe to newsletters as well as find social media details.",
+    skillset: ["Tailwind CSS", "React JS", "MailChimp Newsletter"],
+    photo: drwoy,
   },
   {
     subtitle: "A Transport and Logistics Website",
@@ -154,14 +166,14 @@ export const Projects: ProjectType[] = [
     photo: etl,
   },
   {
-    subtitle: "An Artist Music Website",
-    name: "D Rwoy",
-    github: "https://github.com/overwatch-coder/drwoy",
-    site: "https://officialdrwoy.vercel.app/",
+    subtitle: "SRC Campaign Website",
+    name: "VaMiDzo",
+    github: "https://github.com/overwatch-coder/src-campaign-uhas",
+    site: "https://src-campaign-uhas.vercel.app/",
     description:
-      "A Music Portfolio for an artist which shows the recent songs. Also users can find merch, subscribe to newsletters as well as find social media details.",
-    skillset: ["Tailwind CSS", "React JS", "MailChimp Newsletter"],
-    photo: drwoy,
+      "This Campaign website was designed for a Student Representative Council(SRC) president aspirant to post the agenda and goals he has for the Student body of the University.",
+    skillset: ["Next Js", "Tailwind CSS"],
+    photo: src,
   },
   {
     subtitle: "A Fashion Design Website",

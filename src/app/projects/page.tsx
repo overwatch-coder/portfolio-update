@@ -8,7 +8,7 @@ const ProjectsPage = () => {
         <span>Projects</span>
       </h1>
 
-      <div className="flex flex-col space-y-10">
+      <div className="grid grid-cols-1 gap-10">
         {Projects.map((project, idx) => (
           <Project
             name={project.name}
@@ -19,8 +19,6 @@ const ProjectsPage = () => {
             site={project.site}
             photo={project.photo}
             key={idx}
-            lastItem={idx + 1}
-            length={Projects.length}
           />
         ))}
       </div>

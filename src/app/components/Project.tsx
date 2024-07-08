@@ -11,13 +11,11 @@ const Project = ({
   skillset,
   github,
   site,
-  photo,
-  lastItem,
-  length,
+  photo
 }: ProjectType) => {
   return (
     <div
-      data-aos={lastItem !== length && "fade-up"}
+      data-aos={"fade-down"}
       className="flex flex-col space-y-2 border-b border-gray-400 py-4 last:border-b-0"
     >
       <Link
