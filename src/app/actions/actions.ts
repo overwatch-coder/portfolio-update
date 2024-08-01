@@ -1,6 +1,16 @@
 "use server";
 
 export const submitForm = async (prevState: any, formData: FormData) => {
+  const dob = formData.get("dob") as string;
+
+  if(dob){
+    return {
+      error: "Bot found: You can't send a message with a dob",
+      success: false,
+      message: "",
+    }
+  }
+
   const dataToSubmit = {
     service_id: process.env.EMAIL_JS_SERVICE_ID as string,
     template_id: process.env.EMAIL_JS_TEMPLATE_ID as string,

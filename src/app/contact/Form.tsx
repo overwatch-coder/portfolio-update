@@ -86,6 +86,8 @@ const Form = () => {
           />
         </div>
 
+        <input type="hidden" name="dob" />
+
         <div className="flex flex-col items-start space-y-3">
           <label htmlFor="fullname">Message</label>
           <textarea
