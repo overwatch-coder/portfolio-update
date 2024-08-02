@@ -21,7 +21,7 @@ const ContactPage = () => {
         </p>
 
         {/* Form Goes Here */}
-        <Form />
+        {/* <Form /> */}
       </div>
     </section>
   );
