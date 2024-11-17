@@ -119,10 +119,7 @@ export function Projects() {
         <div className="h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"></div>
       </div>
 
-      <Tabs
-        defaultValue="frontend"
-        className="w-full px-4 md:px-10 -mt-10 md:-mt-0"
-      >
+      <Tabs defaultValue="frontend" className="w-full px-4 md:px-10">
         <TabsList className="grid w-full grid-cols-2 mb-12">
           <TabsTrigger value="frontend">Frontend</TabsTrigger>
           <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
