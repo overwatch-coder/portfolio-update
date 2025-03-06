@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Overwatch Coder | Porfolio",
+  title: "Welcome - Overwatch Coder | Porfolio",
   description: "Overwatch Coder Porfolio website",
   icons: {
     icon: "/favicon.ico",
