@@ -104,7 +104,8 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} Overwatch Coder. All rights reserved.
+            © {2024 - new Date().getFullYear()} Overwatch Coder. All rights
+            reserved.
           </p>
         </div>
       </div>

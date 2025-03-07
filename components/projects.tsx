@@ -83,7 +83,7 @@ const projects = {
       subtitle: "AirBnB Rental Full Stack Web App",
       title: "SpaceShare Vacation Rentals",
       github: "https://github.com/overwatch-coder/SpaceShare",
-      demo: "https://spaceshare.onrender.com/",
+      // demo: "https://spaceshare.onrender.com/",
       description:
         "Creating an Airbnb website, named SpaceShare. The website aims to connect people who want to rent their properties with people who are looking for accommodations.",
       skillset: [
@@ -107,6 +107,35 @@ const projects = {
       image: "/metakay.png",
     },
   ],
+  ai: [
+    {
+      subtitle: "AI Cover Letter Generator",
+      title: "LetterCraft",
+      github: "https://github.com/overwatch-coder/lettercraft",
+      demo: "https://lettercraft.vercel.app/",
+      description:
+        "LetterCraft is an AI-powered cover letter generator designed to streamline the job application process by enabling users to quickly create tailored and professional cover letters. The platform also utilises OpenAI API to intelligently generate customized cover letter content based on user input and job descriptions, significantly reducing the time and effort required to create effective application materials.",
+      skillset: ["React", "TypeScript", "Vite", "Tailwind CSS", "OpenAI API"],
+      image: "/lettercraft.png",
+    },
+    {
+      subtitle: "AI-Powered Educational Study Guide",
+      title: "StudyBot",
+      github: "https://github.com/overwatch-coder/studybot",
+      demo: "https://studybot-ai.vercel.app/",
+      description:
+        "AI-powered educational chat app that helps students with their courses by generating study materials, answering questions, and providing interactive study tools.",
+      skillset: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "OpenAI API",
+        "Supabase",
+      ],
+      image: "/studybot.png",
+    },
+  ],
 };
 
 export function Projects() {
@@ -119,8 +148,9 @@ export function Projects() {
         <div className="h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"></div>
       </div>
 
-      <Tabs defaultValue="frontend" className="w-full px-4 md:px-10">
-        <TabsList className="grid w-full grid-cols-2 mb-12">
+      <Tabs defaultValue="ai" className="w-full px-4 md:px-10">
+        <TabsList className="grid w-full grid-cols-3 mb-12">
+          <TabsTrigger value="ai">AI Web Apps</TabsTrigger>
           <TabsTrigger value="frontend">Frontend</TabsTrigger>
           <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
         </TabsList>
@@ -169,12 +199,14 @@ export function Projects() {
                           </Link>
                         </Button>
                       )}
-                      <Button size="sm" asChild>
-                        <Link href={project.demo} target="_blank">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Demo
-                        </Link>
-                      </Button>
+                      {project.demo && (
+                        <Button size="sm" asChild>
+                          <Link href={project.demo} target="_blank">
+                            <ExternalLink className="mr-2 h-4 w-4" />
+                            Demo
+                          </Link>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

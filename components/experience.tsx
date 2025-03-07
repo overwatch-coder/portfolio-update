@@ -14,14 +14,14 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: "Full Stack Developer (Frontend Focus)",
+      title: "Full Stack Developer",
       company: "White Hat Digital (WHD) Agency, Casablanca, Morocco",
       date: "05/2024 - Present",
       description: [
-        "Created responsive mobile-first and interactive dashboard menu component enhancing user experience and smooth navigation.",
-        "Managed the creation and maintenance of landing and documentation pages, ensuring consistency and user-friendly experience.",
-        "Efficiently managed API endpoints with Axios and Fetch API, enabling seamless data integration and interaction with the backend.",
-        "Created a real-time restaurant digital menu theme customization system, allowing managers to easily customize the menu and enhance user experience.",
+        "Developed complex web interfaces, including admin dashboards, to enhance user engagement",
+        " Developed and Secured backend data and API endpoints, improving platform security",
+        "Integrated customizable themes for restaurant dashboards, offering flexibility in business management",
+        "Assisted in server deployment hosting web applications.",
       ],
     },
     {
@@ -40,10 +40,9 @@ export default function Experience() {
       company: "Freelance, Morocco",
       date: "08/2021 - 06/2023",
       description: [
-        "Created responsive mobile-first websites and UI designs for various clients ensuring optimal user experience and meeting their specific requirements.",
-        "Utilized a range of technologies including Node JS, Express, React, Tailwind CSS, MongoDB, JWT, Context API, HTML, CSS, Figma, and Adobe XD to develop websites and user interfaces that were fast, scalable, and visually appealing.",
-        "Worked closely with clients to understand their needs, provide recommendations, and deliver high-quality work within tight deadlines.",
-        "Collaborated with cross-functional teams, including UX designers, front-end developers to ensure seamless integration and delivery of final products.",
+        "Engineered highly responsive and scalable web applications using TypeScript, React.js, and Next.js, resulting in a 30% increase in user engagement.",
+        "• Drove website traffic by implementing user-friendly designs and optimizing code, leading to a 25% decrease in bounce rates.",
+        "Improved website speed and performance through continuous development efforts, achieving a 40% decrease in page load times.",
       ],
     },
   ];
