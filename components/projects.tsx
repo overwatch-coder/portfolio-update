@@ -63,6 +63,21 @@ const projects = {
   ],
   fullstack: [
     {
+      subtitle: "Stream the latest movies and TV shows",
+      title: "StreameFlix",
+      github: "https://github.com/overwatch-coder/streameflix",
+      demo: "https://streameflix.vercel.app/",
+      description:
+        "Stream the latest movies and TV shows in HD quality. Discover trending content, search by genre, and enjoy unlimited entertainment.",
+      skillset: [
+        "Next.Js",
+        "Tailwind CSS",
+        "TypeScript",
+        "TMDB Api"
+      ],
+      image: "/streameflix.png",
+    },
+    {
       subtitle: "A Full Stack Proposal Website",
       title: "PTM App",
       github: "https://github.com/overwatch-coder/propose2me",
@@ -83,7 +98,7 @@ const projects = {
       subtitle: "AirBnB Rental Full Stack Web App",
       title: "SpaceShare Vacation Rentals",
       github: "https://github.com/overwatch-coder/SpaceShare",
-      // demo: "https://spaceshare.onrender.com/",
+      demo: "https://spaceshare.onrender.com/",
       description:
         "Creating an Airbnb website, named SpaceShare. The website aims to connect people who want to rent their properties with people who are looking for accommodations.",
       skillset: [
