@@ -163,11 +163,11 @@ export function Projects() {
         <div className="h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"></div>
       </div>
 
-      <Tabs defaultValue="ai" className="w-full px-4 md:px-10">
+      <Tabs defaultValue="fullstack" className="w-full px-4 md:px-10">
         <TabsList className="grid w-full grid-cols-3 mb-12">
-          <TabsTrigger value="ai">AI Web Apps</TabsTrigger>
-          <TabsTrigger value="frontend">Frontend</TabsTrigger>
           <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
+          <TabsTrigger value="frontend">Frontend</TabsTrigger>
+          <TabsTrigger value="ai">AI Web Apps</TabsTrigger>
         </TabsList>
 
         {Object.entries(projects).map(([category, items]) => (
