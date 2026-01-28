@@ -15,12 +15,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const projects = {
   frontend: [
     {
+      subtitle: "Professional Photography Portfolio",
+      title: "Nobies Lens",
+      github: "https://github.com/overwatch-coder/nobies_lens",
+      demo: "https://nobies-lens.vercel.app",
+      description:
+        "A professional photography website showcasing artistic portfolios and services, designed to transform fleeting moments into timeless memories through elegant visual storytelling.",
+      skillset: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+      image: "/nobies-lens.png",
+    },
+    {
       subtitle: "A Photography Portfolio Website",
       title: "Qlik Studios",
       github: "https://github.com/overwatch-coder/qlikstudios-rebuild",
       demo: "https://qlikstudios.vercel.app/",
       description:
-        "You can view the some of the client's recent works on photography a well as services available. Appointment Booking of Services can also be achieved easily.",
+        "A modern photography portfolio showcasing recent works and available services, featuring a seamless booking system for client appointments and inquiries.",
       skillset: [
         "Next.js",
         "Tailwind CSS",
@@ -37,7 +47,7 @@ const projects = {
       github: "https://github.com/overwatch-coder/drwoy",
       demo: "https://officialdrwoy.vercel.app/",
       description:
-        "A Music Portfolio for an artist which shows the recent songs. Also users can find merch, subscribe to newsletters as well as find social media details.",
+        "A music portfolio platform for an artist to showcase recent releases, promote merchandise, grow newsletter subscriptions, and connect audiences to social media channels.",
       skillset: ["Tailwind CSS", "React JS", "MailChimp Newsletter"],
       image: "/drwoy.png",
     },
@@ -47,7 +57,7 @@ const projects = {
       demo: "https://etl-express.vercel.app/",
       skillset: ["React Js", "Tailwind CSS"],
       description:
-        "ETL is a transport and Logistics Website that specializes in auto transportation solutions, various uber services as well as auto repairs and maintenance. Clients can also book various appointments easily using the simple and easy appointment booking system found on the website.",
+        "A transport and logistics website offering auto transportation services, ride solutions, vehicle repairs, and an intuitive appointment booking experience.",
       image: "/etl.png",
     },
     {
@@ -56,7 +66,7 @@ const projects = {
       github: "https://github.com/overwatch-coder/src-campaign-uhas",
       demo: "https://src-campaign-uhas.vercel.app/",
       description:
-        "This Campaign website was designed for a Student Representative Council(SRC) president aspirant to post the agenda and goals he has for the Student body of the University.",
+        "A campaign website designed for a Student Representative Council (SRC) presidential candidate to communicate goals, initiatives, and engage the student body.",
       skillset: ["Next Js", "Tailwind CSS"],
       image: "/src.png",
     },
@@ -68,14 +78,36 @@ const projects = {
       github: "https://github.com/overwatch-coder/streameflix",
       demo: "https://streameflix.vercel.app/",
       description:
-        "Stream the latest movies and TV shows in HD quality. Discover trending content, search by genre, and enjoy unlimited entertainment.",
-      skillset: [
-        "Next.Js",
-        "Tailwind CSS",
-        "TypeScript",
-        "TMDB Api"
-      ],
+        "A modern video streaming platform for discovering trending movies and TV shows, featuring genre filtering, advanced search, and responsive HD-ready layouts.",
+      skillset: ["Next.Js", "Tailwind CSS", "TypeScript", "TMDB Api"],
       image: "/streameflix.png",
+    },
+    {
+      subtitle: "Premium Sneakers & Apparel Store",
+      title: "Money’s Outlet",
+      github: "https://github.com/overwatch-coder/moneys-outlet",
+      demo: "https://moneysoutlet.vercel.app/",
+      description:
+        "A modern e-commerce platform for premium sneakers and apparel featuring product catalogs, authentication, inventory management, and conversion-focused shopping flows.",
+      skillset: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      image: "/moneys-outlet.png",
+    },
+    {
+      subtitle: "Luxury Jewelry E-commerce Platform",
+      title: "Elita Jewelry",
+      github: "https://github.com/overwatch-coder/elita-jewelry",
+      demo: "https://elita-jewelry.vercel.app/",
+      description:
+        "A full-stack jewelry e-commerce platform showcasing handcrafted collections, product browsing, and order workflows designed for elegance and seamless user experience.",
+      skillset: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Tailwind CSS",
+        "Laravel",
+        "MySQL",
+      ],
+      image: "/elita.png",
     },
     {
       subtitle: "A Full Stack Proposal Website",
@@ -83,7 +115,7 @@ const projects = {
       github: "https://github.com/overwatch-coder/propose2me",
       demo: "https://ptm-app.vercel.app/",
       description:
-        "PTM is a platform designed to help individuals express their love and propose to their partners with confidence. It provides an effortless method for users to write their heartfelt requests and generate a unique link for their proposal. Users can then share the link with their potential partner, who can view the proposal and respond with an answer.",
+        "A full-stack platform enabling users to create and share personalized proposal links, complete with secure authentication, real-time responses, and email notifications.",
       skillset: [
         "Node JS",
         "Express JS",
@@ -95,29 +127,12 @@ const projects = {
       image: "/ptm.png",
     },
     {
-      subtitle: "AirBnB Rental Full Stack Web App",
-      title: "SpaceShare Vacation Rentals",
-      github: "https://github.com/overwatch-coder/SpaceShare",
-      demo: "https://spaceshare.onrender.com/",
-      description:
-        "Creating an Airbnb website, named SpaceShare. The website aims to connect people who want to rent their properties with people who are looking for accommodations.",
-      skillset: [
-        "Node JS",
-        "Express JS",
-        "Next.Js",
-        "Tailwind CSS",
-        "MongoDB",
-        "TypeScript",
-      ],
-      image: "/sheshare.png",
-    },
-    {
       subtitle: "A Fashion Design Website",
       title: "Metakay",
       github: "https://github.com/overwatch-coder/metakay",
       demo: "https://metakay.vercel.app/",
       description:
-        "This is a fashion design website for a brand called Metakay. Integrated into the website include the brand's portfolio, shopping space, cart system and taking orders",
+        "A fashion brand website featuring portfolio showcases, product catalogs, cart systems, and streamlined ordering workflows with CMS integration.",
       skillset: ["React Js", "Tailwind CSS", "Contentful CMS"],
       image: "/metakay.png",
     },
@@ -129,7 +144,7 @@ const projects = {
       github: "https://github.com/overwatch-coder/lettercraft",
       demo: "https://lettercraft.vercel.app/",
       description:
-        "LetterCraft is an AI-powered cover letter generator designed to streamline the job application process by enabling users to quickly create tailored and professional cover letters. The platform also utilises OpenAI API to intelligently generate customized cover letter content based on user input and job descriptions, significantly reducing the time and effort required to create effective application materials.",
+        "An AI-powered cover letter generator that creates tailored, professional applications using job descriptions and user profiles, dramatically reducing application prep time.",
       skillset: ["React", "TypeScript", "Vite", "Tailwind CSS", "OpenAI API"],
       image: "/lettercraft.png",
     },
@@ -139,7 +154,7 @@ const projects = {
       github: "https://github.com/overwatch-coder/studybot",
       demo: "https://studybot-ai.vercel.app/",
       description:
-        "AI-powered educational chat app that helps students with their courses by generating study materials, answering questions, and providing interactive study tools.",
+        "An AI-driven educational assistant that generates study materials, answers questions, and provides interactive learning tools for students.",
       skillset: [
         "React",
         "TypeScript",

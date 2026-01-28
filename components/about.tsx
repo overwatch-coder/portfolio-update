@@ -21,15 +21,15 @@ export function About() {
           </div>
 
           <p className="text-muted-foreground text-justify">
-            I love exploring new things! 👋 Hello! I am currently a final-year
-            Masters student studying Embedded Electronics. My academic journey
-            has equipped me with a solid foundation in digital electronics and
+            I love exploring new things! 👋 Hello! I am currently a
+            Masters student studying Collective Intelligence. My academic journey
+            has equipped me with a solid foundation in digital electronics, programming, machine learning, and
             hands-on experience with tools like MATLAB, Proteus, AutoCAD,
-            LabVIEW, and Arduino.
+            LabVIEW, Python, R, and Arduino.
           </p>
 
           <p className="text-muted-foreground text-justify">
-            💻 In the digital realm, I wear another hat as a web developer. I
+            💻 In the digital realm, I wear another hat as a full-stack developer. I
             have had the pleasure of crafting and launching various web
             applications using cutting-edge technologies.
           </p>
