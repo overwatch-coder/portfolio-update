@@ -93,6 +93,16 @@ const projects = {
       image: "/moneys-outlet.png",
     },
     {
+      subtitle: "Luxury African Fashion E-commerce Platform",
+      title: "Elita Apparel",
+      github: "https://github.com/overwatch-coder/elita-apparel",
+      demo: "https://elita-apparel.vercel.app/",
+      description:
+        "A full-stack fashion e-commerce platform for showcasing premium African print collections, enabling seamless product discovery, secure checkout, and modern brand presentation.",
+      skillset: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Paystack"],
+      image: "/elita-apparel.png",
+    },
+    {
       subtitle: "Luxury Jewelry E-commerce Platform",
       title: "Elita Jewelry",
       github: "https://github.com/overwatch-coder/elita-jewelry",
