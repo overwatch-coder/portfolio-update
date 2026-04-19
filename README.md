@@ -1,10 +1,10 @@
 # Modern Portfolio — Overwatch Coder
 
-A personal portfolio website for **Nyamadi Atsu** (Overwatch Coder), a Full Stack Developer and Masters student in Collective Intelligence. Built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**, the site showcases projects, experience, and skills with smooth animations and a clean, responsive design.
+A personal portfolio website for **Nyamadi Atsu** (Overwatch Coder), a Full Stack Developer and Master's student in Collective Intelligence. Built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**, the site showcases projects, experience, and skills with smooth animations and a clean, responsive design.
 
-## Live Demo
+## GitHub Profile
 
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://github.com/overwatch-coder)
+[![GitHub](https://img.shields.io/badge/View-GitHub-black?logo=github)](https://github.com/overwatch-coder)
 
 ---
 
@@ -24,7 +24,7 @@ A personal portfolio website for **Nyamadi Atsu** (Overwatch Coder), a Full Stac
 ## Tech Stack
 
 | Layer | Technologies |
-|-------|-------------|
+| --- | --- |
 | Framework | Next.js 15 (static export) |
 | Language | TypeScript |
 | Styling | Tailwind CSS, tailwindcss-animate |
@@ -46,8 +46,8 @@ A personal portfolio website for **Nyamadi Atsu** (Overwatch Coder), a Full Stac
 
 ```bash
 # Clone the repository
-git clone https://github.com/overwatch-coder/portfolio-update.git
-cd portfolio-update
+git clone <your-repo-url>
+cd <repo-directory>
 
 # Install dependencies
 npm install
@@ -109,4 +109,4 @@ npm run lint
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This repository does not currently include a `LICENSE` file. Add a license file if you intend to make the project available for reuse or redistribution.
